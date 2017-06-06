@@ -1,17 +1,11 @@
 angular.module('video-player')
-
-// .controller('testCtrl', function($scope, $templateCache) {
-//   var template = $templateCache.get('app.html');
-
-// })
+.controller('MainCtrl', function() {
+  this.videos = exampleVideoData;
+  this.video = exampleVideoData[0];
+})
 
 .component('app', {
-  // have a binding
-  bindings: {
-    
-  },
-  // have a template(s)
+  controller: 'MainCtrl',
   templateUrl: 'src/templates/app.html'
-
-
 });
+

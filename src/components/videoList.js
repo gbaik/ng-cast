@@ -3,10 +3,5 @@ angular.module('video-player')
   bindings: {
     videos: '<'
   },
-  templateUrl: 'src/templates/videoList.html',
-})
-.controller('VideoListCtrl', function VideoListCtrl($scope) {
-  $scope.videos = exampleVideoData;
-  // console.log('scope', $scope.videos);     
+  templateUrl: 'src/templates/videoList.html'
 });
-
