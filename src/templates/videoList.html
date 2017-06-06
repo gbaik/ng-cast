@@ -1,7 +1,11 @@
-<ul class="video-list">
+<ul class="video-list" ng-controller="VideoListCtrl as ctrl">
+<!--   <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
   <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
   <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
   <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
+  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry> -->
+<!--   <video-list-entry><h5><em></em> component goes here</h5></video-list-entry>
+ --> 
+<!--  <pre>{{videos | json}}</pre>
+ -->  <video-list-entry videos="ctrl.video">{{video}}</video-list-entry>
 </ul>

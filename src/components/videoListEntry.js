@@ -1,4 +1,10 @@
 angular.module('video-player')
 .component('videoListEntry', {
-  // TODO
+  templateUrl: 'src/templates/videoListEntry.html'
+
+})
+
+.controller('VideoListEntryCtrl', function($scope){
+  $scope.video = exampleVideoData[0];
+
 });
