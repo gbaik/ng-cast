@@ -1,12 +1,16 @@
 angular.module('video-player')
-.controller('MainCtrl', function() {
+.controller('MainCtrl', function($scope) {
   this.videos = exampleVideoData;
-  
-  this.handleVideoEntryTitleClick = (event) => {
+
+  this.selectVideo = (event) => {
     this.video = event;
   };
 
-  this.handleVideoEntryTitleClick(exampleVideoData[0]);
+  this.searchResults = (data) => {
+    console.log(data);
+  };
+  
+  this.selectVideo(exampleVideoData[0]);
 })
 
 .component('app', {

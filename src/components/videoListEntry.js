@@ -4,7 +4,7 @@ angular.module('video-player')
   controller: 'MainCtrl',
   bindings: {
     video: '<',
-    handleVideoEntryTitleClick: '<'
+    selectVideo: '<'
   },
   templateUrl: 'src/templates/videoListEntry.html'
 });
